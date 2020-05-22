@@ -22,14 +22,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back!"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="79dp" />
+        app:layout_constraintBottom_toTopOf="@+id/test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
 
     <TextView
         android:id="@+id/test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
         tools:layout_editor_absoluteX="176dp"
         tools:layout_editor_absoluteY="389dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
