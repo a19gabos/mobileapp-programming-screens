@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -17,7 +18,8 @@ public class SecondActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                setContentView(R.layout.activity_main);
+                TextView textView = (TextView) findViewById(R.id.test);
+                textView.setText("Test"); //set text for text view
             }
         });
     }
