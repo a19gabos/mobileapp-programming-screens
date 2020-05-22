@@ -18,8 +18,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                TextView textView = (TextView) findViewById(R.id.hello);
-                textView.setText("Hello there"); 
+                setContentView(R.layout.activity_second);
             }
         });
     }
