@@ -14,12 +14,11 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        final Button button = findViewById(R.id.back);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button close = findViewById(R.id.back);
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-
-                TextView textView = (TextView) findViewById(R.id.test);
-                textView.setText("Test"); //set text for text view
+                finish();
             }
         });
     }
